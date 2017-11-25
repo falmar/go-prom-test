@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  prometheus:
+    build:
+      context: .
+      dockerfile: prom.Dockerfile
+
+  go-app:
+    build:
+      context: .
+      dockerfile: app.Dockerfile
